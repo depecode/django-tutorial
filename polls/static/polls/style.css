@@ -8,6 +8,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0px;
 }
 
 li {
@@ -20,4 +21,12 @@ li {
 li a {
   color: white;
   text-decoration: none;
+}
+
+input {
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 2px solid black;
+  padding: 10px;
 }

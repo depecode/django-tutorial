@@ -2,6 +2,10 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
 
+<h1>Welcome to this amazing super awesome website</h1>
+<h3>Don't you think that the design is just amazing?!</h3>
+<h5>Here are some questions that make no sense whatsoever</h5>
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -9,5 +13,5 @@
     {% endfor %}
     </ul>
 {% else %}
-    <p>No polls are available.</p>
+    <p>Oops no polls are available. What a shame!</p>
 {% endif %}
