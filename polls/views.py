@@ -4,12 +4,13 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
 
+
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
-      return Questions.objects.order_by('-pub_date')[:5]
+      return Question.objects.order_by('-pub_date')[:5]
 
 class DetailView(generic.DetailView):
     model = Question
